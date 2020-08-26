@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="sitestyle.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="First Website by Ignacy Kozub">
+</head>
+<title> First Website by Ignacy Kozub © </title>
+
+<body>
+<header class="navigation">
+    <a href="main.html">Home</a>
+    <a href="aboutme.html">About me</a>
+    <a href="contact.html">Contact</a>
+</header>
+<div class="content">
+    <h1>Zadanie: zbuduj własną stronę internetową!</h1>
+    <p>W tym ćwiczeniu musisz stworzyć własną stronę internetową. Wykorzystaj wszystko, czego nauczyłeś się do tej
+        pory.
+
+        Jest kilka wymagań, które powinieneś spełnić:
+
+        Strona powinna zawierać co najmniej 3 podstrony.
+        Jego HTML powinien być poprawny do W3C.
+        Powinien zawierać poprawnie używane elementy HTML5
+        Powinien zawierać menu nawigacyjne
+        Powinien zawierać stronę kontaktową z formularzem do wysyłania wiadomości e-mail do autora (nie trzeba
+        tworzyć logiki po stronie serwera, tylko interfejs użytkownika)
+        Strona kontaktowa powinna mieć sprawdzanie poprawności napisane w JavaScript przy użyciu wyrażeń regularnych
+        Opcjonalnie: powinien zawierać ekran powitalny z animacją
+        NIE używaj żadnych frameworków CSS (np. Bootstrap)
+        NIE używaj żadnych frameworków JavaScript (np. JQuery, React)</p>
+
+    <h1>Krok po kroku:</h1>
+    <ol>
+        <h2>Konfiguruj repozytorium</h2>
+    </ol>
+    <p>
+    <li>Utwórz nowe repozytorium GitHub dla swojej witryny za pomocą pliku README.md</li>
+    <li> W razie potrzeby dodaj plik .gitignore</li>
+    <li>repozytorium do swojego komputera</li>
+    </p>
+    </ol>
+    <h2>Utwórz stronę główną</h2>
+    <ol>
+        <p>Zanim zaczniesz kodować, szkicuj, jak powinny wyglądać Twoje strony internetowe. Możesz to zrobić na
+            papierze lub w dowolnej aplikacji z ramą drucianą. To jest twój wybór. Celem jest wizualizacja różnych
+            sekcji i części, które będą na twojej stronie oraz sposób ich rozmieszczenia.
+        <li>Utwórz nowy plik HTML w katalogu głównym repozytorium o nazwie: index.html</li>
+        <li> Ustaw doctype na HTML5</li>
+        <li>Dodaj <code>&lt;head&gt;</code> część i skonfiguruj podstawowe metadane oraz
+            <code>&lt;title&gt;</code> stronę
+        </li>
+        <li>Dodaj część</li>
+        <li>Dodaj <code>&lt;head&gt;</code> do treści, która będzie zawierać menu nawigacyjne. Pierwszy element
+            menu powinien zawierać link do indeksu.
+        </li>
+        <li>Dodaj <code>&lt;div&gt;</code> element do ciała, który ma klasę o nazwie: content . Będzie zawierać
+            część stron, która różni się od siebie.
+        </li>
+        <li>Dodaj swoje zdjęcie i małe wprowadzenie do niego o sobie.</li>
+        <li>Dodaj do niego trochę treści (np. Opis ćwiczenia), aby zobaczyć, gdzie to będzie. Możesz wypełnić ją
+            dowolną treścią. Uważaj, aby właściwie używać różnych tagów HTML, aby mógł wyrazić twoje zamiary.
+        </li>
+        <li>Dodaj <code>&lt;footer&gt;</code> i dodaj do niej trochę treści. Weź przykład z innych stron.</li>
+        <li>Po zakończeniu wprowadź zmiany do repozytorium za pomocą komentarza opisowego.
+            </p>
+        </li>
+    </ol>
+    <h2>Zrób to ładnie</h2>
+    <p>Utwórz nowy folder o nazwie css w katalogu głównym repozytorium
+        Utwórz plik style.css w nowo utworzonym folderze. Będzie to zawierało wszystkie zasady dotyczące wyglądu
+        witryny.
+        Dodaj do niego odniesienie w części głównej pliku index.html .
+        Zdefiniuj podstawowe zasady dla elementu body. (Domyślne tło, czcionka, wyrównanie ...) Reguły te są
+        dziedziczone w elementach potomnych (każdym elemencie, który znajduje się w treści).
+        Napisz reguły css, aby cała strona była jak Twój szkic.</p>
+    <h2>Utwórz stronę kontaktową</h2>
+    <p>Skopiuj plik index.html i nadaj mu nazwę: contact.html
+        Dodaj link do menu nawigacji, który przekierowuje na tę stronę HTML
+        Usuń wewnętrzną zawartość elementu div.content
+        Utwórz w nim formularz
+        Dodaj dwa <code>&lt;input&gt;</code> pola i <code>&lt;txtarea&gt;</code> pole do formularza i odpowiednie
+        <code>&lt;label&gt;</code> do nich. Pierwsze pole wejściowe to nazwa z tekstem zastępczym: Wpisz swoje imię
+        Drugie pole wejściowe to wiadomość e-mail z tekstem zastępczym: Podaj swój adres e-mail Obszar tekstowy
+        będzie zawierał wiadomość, więc podaj kilka przydatnych instrukcji w tekście zastępczym. Nie zapomnij dodać
+        nazwanego całego elementu formularza.
+        Dodaj przycisk przesyłania, który powinien zawierać tekst WYŚLIJ . Powinien być domyślnie wyłączony.
+        Otwórz plik style.css i na dole i napisz kilka zasad, które sprawiają, że jest przyjemny. (np. wyśrodkowany
+        poziomo, a pola mają tę samą szerokość). Przykład możesz zobaczyć na stronie <a
+                href="https://codecool.pl/kontakt/">https://codecool.pl/kontakt/</a> . Może jest ci to znane. ;)
+        Zatwierdź zmiany w swoim repozytorium.</p>
+</div>
+<footer class="footer">
+    <address>
+        <a href="https://codecool.com/pl/"> <img src="logo.png" width="100" height="11" alt="Codecool logo"></a>
+        <p><strong>Ślusarska 9<br>
+            30-710 Kraków <br>
+            600-668-114</strong></p>
+    </address>
+
+</footer>
+</body>
+
+</html>

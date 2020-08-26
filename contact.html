@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <script language="JavaScript">
+        const form = document.querySelector("form")
+        const input = form.querySelector("input");
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            if (input.value.length >= 3) {
+                e.target.submit();
+            } else {
+                alert("wypełniłes błędnie okienko");
+            }
+        });
+
+    </script>
+
+
+    <link rel="stylesheet" href="sitestyle.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="First Website by Ignacy Kozub">
+</head>
+<title> "First Website by Ignacy Kozub ©" </title>
+
+<body>
+<header class="navigation">
+    <a href="main.html">Home</a>
+    <a href="aboutme.html">About me</a>
+    <a href="contact.html">Contact</a>
+</header>
+
+<div class="content">
+    <h1>Any suggestion or question? Mail me!</h1>
+
+    <form class="form" method="post" action="confirmation.html">
+        <div class="form">
+            <label class="email">E-mail: <input type="text" name="email" value="E-mail address"></label><br>
+            <label class="subject">Subject: <input type="text" name="subject" value="Subject"> </label> <br>
+            <label class="name">Name: <input type="text" name="name" value="Your name"></label><br>
+            <label class="content">Content: <textarea rows="5"
+                                                      cols="35"
+                                                      name="content">Enter your e-mail here...</textarea></label><br>
+        </div>
+        <br>
+        <br>
+        <input type="checkbox">
+        <span> Wyrażam zgodę na przetwarzanie moich danych osobowych (zgodnie z art. 6 ust. 1
+                lit. a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia
+                27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
+                sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o
+                ochronie danych)).
+            </span><br><br>
+
+        <input type="submit" name="button" value="Send">
+    </form>
+
+</div>
+
+<footer class="footer">
+    <address>
+        <a href="https://codecool.com/pl/"><img  src="logo.png" width="100" height="11"  alt="Codecool logo"></a>
+        <p><strong>Ślusarska 9<br>
+            30-710 Kraków <br>
+            600-668-114</strong></p>
+    </address>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+body {
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    color: navy;
+    /* backgorund: color, image, 
+    repeat(repeat, repeat-x(y),no-repeat)position */
+    background: rgba(80, 172, 92, 0.459) url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
+
+}
+
+tekst1 {
+    color: aqua;
+    background-color: rgba(23, 64, 199, 0.253);
+
+}
+
+tekst2 {
+    color: rgb(89, 95, 10);
+
+
+}
+
+tekst3 {
+    color: #ff00c8;
+}
+
+p {
+    letter-spacing: 0.3em;
+    word-spacing: 1em;
+    line-height: 1.0;
+    text-align: left;
+}
+
+h1 {
+    color: rgb(217, 158, 223);
+    background-color: #900;
+    font-size: 2em;
+    margin: 2em 2em 7px;
+    padding: 4px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    border-bottom-color: #c00;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: rgba(141, 121, 56, 0.787);
+    margin: 20px;
+    padding: 40px;
+}
+
+h3 {
+    border-style: dashed;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/*mozna to zrobic bez uzycia class poprzez dodanie # nazwa i ponizej wstawienie # nazwa podnazwa */
+#top {
+    background-color: #ccc;
+    padding: 20px
+}
+
+#top h1 {
+    color: #ff0;
+}
+
+#top p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Pseudoklasy */
+a:link {
+    color: blue;
+}
+
+a:visited {
+
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    /* dzieje sie gdy najezdzam na link myszką */
+    text-decoration: brown;
+    color: blue;
+    background-color: yellow;
+}
+
+/*obszar wpisywania zaznacza sie na dany kolor kiedy chce coś wpisać  */
+input:focus, textarea:focus {
+    background: rgb(63, 134, 41);
+}
+
+/* dotyczy pierwszego potomka elementu, jaknp pierwszy akapit
+chyba dotyczy wszystkich częsci strony*/
+p:first-child {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* marginesy margin: top, right,bottom,left - zgodnie ze wskazówkami zegara */
+/* padding : góra-dół, lewa-prawa */
+/* border: width, color, style  - moze byc stosowana do border-top, border-right*/
+/* font: style, weight,size,hieght,family */
+
+td {
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
+}
+
+li {
+    display: inline
+}
+
+p {
+    font-size: 12px;
+}
+
+/* pseudoelementy  - duza pierwsza litera i pogrubiona pierwsza linia*/
+
+p:first-letter {
+    font-size: 24px;
+    float: left;
+}
+
+p:first-line {
+    font-weight: bold;
+}
+
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+li:before {
+    content: "POW! ";
+}
+
+p:before {
+    content: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.frisco.pl%2Fpid%2C26%2Fn%2Clowicz-dzem-truskawkowy-niskoslodzony%2Fstn%2Cproduct&psig=AOvVaw0-j_xaN70runSLN0fWvrd8&ust=1587910723274000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiCpcnig-kCFQAAAAAdAAAAABAD)
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+#content {
+    margin-left: 200px;
+}
+
+
